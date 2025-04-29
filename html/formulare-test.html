@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test formulare</title>
+  </head>
+  <body>
+    <form method="post">
+      <!-- Camp text -->
+      <label for="nume">Nume:</label>
+      <input
+        type="text"
+        id="nume"
+        name="nume"
+        size="30"
+        maxlength="50"
+      /><br /><br />
+
+      <!-- Camp parola -->
+      <label for="parola">Parola:</label>
+      <input
+        type="password"
+        id="parola"
+        name="parola"
+        size="30"
+        maxlength="20"
+      /><br /><br />
+
+      <!-- Butoane radio -->
+      <p>Gen:</p>
+      <input type="radio" id="masculin" name="gen" value="masculin" />
+      <label for="masculin">Masculin</label><br />
+      <input type="radio" id="feminin" name="gen" value="feminin" />
+      <label for="feminin">Feminin</label><br /><br />
+
+      <!-- Casete de validare -->
+      <p>Interese:</p>
+      <input type="checkbox" id="tech" name="interese" value="Tehnologie" />
+      <label for="tech">Tehnologie</label><br />
+      <input type="checkbox" id="arta" name="interese" value="Arta" checked />
+      <label for="arta">Arta</label><br /><br />
+
+      <!-- Meniu de selectie -->
+      <label for="facultate">Facultatea:</label>
+      <select id="facultate" name="facultate">
+        <option value="informatica">Informatica</option>
+        <option value="litere">Litere</option>
+        <option value="inginerie">Inginerie</option></select
+      ><br /><br />
+
+      <!-- Textarea -->
+      <label for="comentarii">Comentarii:</label><br />
+      <textarea
+        id="comentarii"
+        name="comentarii"
+        rows="4"
+        cols="50"
+        placeholder="Introduceti aici orice observatii."
+      ></textarea
+      ><br /><br />
+
+      <!-- Butoane -->
+      <input type="submit" value="Trimite" />
+      <input type="reset" value="Resetare" />
+      <input type="button" value="Buton simplu" />
+    </form>
+  </body>
+</html>

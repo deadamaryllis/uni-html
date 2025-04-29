@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezumat curs 8</title>
+    <style>
+      html,
+      body {
+        background-color: #333;
+      }
+      .text {
+        color: whitesmoke;
+        font-family: Bahnschrift;
+        font-weight: 400;
+      }
+
+      .link {
+        text-decoration: none;
+        color: lightblue;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body class="text">
+    <h1>Formular</h1>
+    <form method="post">
+      <table>
+        <!-- Camp text -->
+        <tr>
+          <td><label for="nume">Nume complet:</label></td>
+          <td>
+            <input type="text" id="nume" name="nume" size="30" maxlength="50" />
+          </td>
+        </tr>
+        <!-- Camp email -->
+        <tr>
+          <td>
+            <label for="email">Adresa de e-mail:</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              size="30"
+              maxlength="50"
+            />
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <!-- Butoane radio -->
+      <p>Tip de participant:</p>
+      <input type="radio" id="student" name="tip" value="student" />
+      <label for="student">Student</label><br />
+      <input type="radio" id="cadru" name="tip" value="cadru" />
+      <label for="cadru">Cadru didactic</label><br />
+      <input type="radio" id="invitat" name="tip" value="invitat" />
+      <label for="invitat">Invitat extern</label>
+
+      <!-- Casete de validare -->
+      <p>La ce activitati doriti sa participati:</p>
+      <input type="checkbox" id="workshop" name="activitati" value="workshop" />
+      <label for="workshop">Workshop de pictura</label><br />
+      <input type="checkbox" id="concurs" name="activitati" value="concurs" />
+      <label for="concurs">Concurs de eseuri</label><br />
+      <input
+        type="checkbox"
+        id="proiectie"
+        name="activitati"
+        value="proiecte"
+      />
+      <label for="proiectie">Proiectie de filmuri</label><br />
+      <input type="checkbox" id="tur" name="activitati" value="tur" />
+      <label for="tur">Tur ghidat</label><br /><br />
+
+      <!-- Meniu de selectie -->
+      <label for="limba">Limba preferata pentru comunicare:</label>
+      <select id="limba" name="limba">
+        <option value="romana">Romana</option>
+        <option value="engleza">Engleza</option>
+        <option value="franceza">Franceza</option></select
+      ><br /><br />
+
+      <!-- Textarea -->
+      <label for="comentarii">Sugestii / comentarii suplimentare:</label><br />
+      <textarea
+        id="comentarii"
+        name="comentarii"
+        rows="4"
+        cols="50"
+        placeholder="Introduceti aici orice observatii."
+      ></textarea
+      ><br /><br />
+
+      <!-- Butoane -->
+      <input type="submit" value="Trimite" />
+      <input type="reset" value="Resetare" />
+      <br /><br />
+      <a href="home.html" class="link">Back to home</a>
+    </form>
+  </body>
+</html>

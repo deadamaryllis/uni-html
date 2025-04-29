@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulare 2</title>
+  </head>
+
+  <body bgcolor="#e6e6f8" align="center">
+    <h1>Formulare Complexe</h1>
+    <h2>Formular 1: Înregistrare utilizator</h2>
+    <form method="post">
+      Nume complet:
+      <input
+        type="text"
+        name="nume"
+        size="50"
+        maxlength="50"
+        required
+      /><br /><br />
+      Email:
+      <input
+        type="text"
+        name="email"
+        size="50"
+        maxlength="50"
+        required
+      /><br /><br />
+      Parola:
+      <input
+        type="password"
+        name="parola"
+        size="25"
+        maxlength="25"
+        required
+      /><br /><br />
+      Data nasterii:
+      <input type="date" name="data_nasterii" required /><br /><br />
+      Gen:
+      <input
+        type="radio"
+        id="gen_masculin"
+        name="gen"
+        value="masculin"
+        required
+      />
+      <label for="gen_masculin">Masculin</label>
+      <input
+        type="radio"
+        id="gen_feminin"
+        name="gen"
+        value="feminin"
+        required
+      />
+      <label for="gen_feminin">Feminin</label>
+      <input type="radio" id="gen_alt" name="gen" value="alt" required />
+      <label for="gen_alt">Altul</label><br /><br />
+      <button type="button">Înregistrează-te</button>
+      <hr />
+      <h2>Formular 2: Comandă produse</h2>
+      <table border="5" bgcolor="white" align="center">
+        <tr>
+          <td>
+            <label for="produs">Produs:</label>
+          </td>
+          <td>
+            <select id="produs" name="produs">
+              <option value="produs1">Telefon</option>
+              <option value="produs2">Laptop</option>
+              <option value="produs3">Tabletă</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="culoare">Culoarea preferată:</label>
+          </td>
+          <td>
+            <input type="color" id="culoare" name="culoare" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cantitate">Cantitate:</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="cantitate"
+              name="cantitate"
+              size="4"
+              maxlength="4"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

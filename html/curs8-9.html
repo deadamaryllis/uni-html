@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezumat curs 8</title>
+    <style>
+      html,
+      body {
+        background-color: #333;
+      }
+      .text {
+        color: whitesmoke;
+        font-family: Bahnschrift;
+        font-weight: 400;
+      }
+
+      .link {
+        text-decoration: none;
+        color: lightblue;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body class="text">
+    <h1>Cursul 8 - Formulare</h1>
+    <h3>Tag-urile principale</h3>
+    <ul>
+      <li>
+        &lt;form method=post sau get&gt;. Post adauga datele in link, Get face
+        un http request.
+      </li>
+      <li>
+        &lt;input&gt; - text, password (text cu caractere ascunse), radio
+        buttons (de selectare a unei singuri optiuni), checkbox (de selectare a
+        multiple optiuni)
+      </li>
+      <li>
+        &lt;label&gt; - Textul ce acompaniaza optiunile / butoanele. atributul
+        <b>for</b> asociaza label-ul cu <b>id</b>-ul inputului.
+      </li>
+      <li>&lt;select&gt; - putem selecta din lista dropdown</li>
+      <li>&lt;option&gt; - optiunile din lista</li>
+      <li>&lt;textarea&gt; - un camp de text mai mare, cu mai multe linii</li>
+      <li>butoane: submit - trimite, reset - sterge, button - buton simplu</li>
+    </ul>
+    <a href="formulare-test.html" class="link">exemplu</a>
+    <h1>Cursul 9</h1>
+    <ul>
+      <li>input type="file" trimite fisiere catre server</li>
+      <li>
+        input accept="image/png, image/jpeg" accepta doar tipuri specifice de
+        fisiere (in acest caz, imagini html sau jpeg)
+      </li>
+      <li>input multiple accepta mai multe fisiere</li>
+    </ul>
+    <h3>Tipurile disponibile pentru elementul <b>input</b>:</h3>
+    <ul>
+      <li><b>date</b> - selectare dată</li>
+      <li><b>datetime-local</b> - selectare dată și oră fără fus orar</li>
+      <li><b>email</b> - validare automată pentru adrese de email</li>
+      <li><b>month</b> - selectare lună și an</li>
+      <li><b>number</b> - introducere de numere</li>
+      <li><b>range</b> - slider pentru valori numerice</li>
+      <li><b>search</b> - câmp special pentru căutare</li>
+      <li><b>tel</b> - introducere numere de telefon</li>
+      <li><b>time</b> - selectare oră</li>
+      <li><b>url</b> - validare automată pentru adrese web</li>
+      <li><b>week</b> - selectare săptămână dintr-un an</li>
+    </ul>
+    <p>
+      Pe lângă acestea, există și alte tipuri de input precum checkbox, color,
+      file, hidden, image, password, radio, reset, submit, fiecare având un rol
+      bine definit în funcție de contextul formularului.
+    </p>
+    <br />
+    <a href="home.html" class="link">Back to home</a>
+  </body>
+</html>
