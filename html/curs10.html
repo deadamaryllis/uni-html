@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezumat curs 8</title>
+    <style>
+      html,
+      body {
+        background-color: #333;
+      }
+      .text {
+        color: whitesmoke;
+        font-family: Bahnschrift;
+        font-weight: 400;
+      }
+
+      .link {
+        text-decoration: none;
+        color: lightblue;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body class="text">
+    <h1>Cursul 10 - CSS</h1>
+    <h3>Modalitati de aplicare CSS</h3>
+    <ul>
+      <li>Inline - stilizare direct in tag</li>
+      <li>Embedded - stilizare in head, cu tagul style</li>
+      <li>External - stilizare in fisier separat, cu tagul link</li>
+    </ul>
+    <h3>Sintaxa CSS</h3>
+    <ul>
+      <li>selector { proprietate: valoare; }</li>
+    </ul>
+    <h4>Exemplu:</h4>
+    <ul>
+      <li>h1 { font-size: 24px; color: blue; }</li>
+    </ul>
+    <h3>Selectori CSS</h3>
+    <ul>
+      <li>Tag - selecteaza toate tagurile de acelasi tip</li>
+      <li>Class - selecteaza toate tagurile cu aceeasi clasa (punct)</li>
+      <li>Id - selecteaza un singur tag (hashtag)</li>
+      <li>Descendent - selecteaza un tag dintr-un alt tag (spatiu)</li>
+    </ul>
+    <h3>Exemplu de selectori CSS</h3>
+    <ul>
+      <li>Exemplu: div p - selecteaza toate tagurile p dintr-un div</li>
+      <li>#id - selecteaza un element cu id-ul dat</li>
+      <li>.clasa - selecteaza toate elementele cu clasa data</li>
+      <li>div.clasa - selecteaza toate div-urile cu clasa data</li>
+      <li>div#id - selecteaza div-ul cu id-ul dat</li>
+    </ul>
+    <h3>Prioritati CSS</h3>
+    <ul>
+      <li>Inline - cele mai importante</li>
+      <li>Embedded - prioritate medie</li>
+      <li>Externe - prioritate mai mica</li>
+      <li>
+        Daca doua reguli au aceeasi specificitate, cea scrisa mai tarziu in cod
+        are prioriate.
+      </li>
+      <li>
+        Selectori mai specifici (ex. ID) au prioritate mai mare decat clasele
+        sau etichetele.
+      </li>
+      <li>
+        Selectori mai lungi si mai specifici sunt preferati in fata celor
+        generali.
+      </li>
+      <li>
+        !important - prioritate maxima, dar nu este recomandat sa fie folosit.
+      </li>
+    </ul>
+    <h3>Comentarii CSS</h3>
+    <ul>
+      <li>/* Comentariu pe mai multe linii */</li>
+      <li>// Comentariu doar pentru o linie</li>
+    </ul>
+    <h3>Etichete HTML utile in CSS</h3>
+    <ul>
+      <li>
+        span - folosit pentru a stiliza portiuni de text inline, fara
+        intrerupere de linie
+      </li>
+      <li>div - defineste o zona de tip block, separata vizual in pagina.</li>
+    </ul>
+    <h3>Fundaluri (background)</h3>
+    <ul>
+      <li>background-image - imagine de fundal</li>
+      <li>background-color - culoare de fundal</li>
+      <li>background-repeat - repeta imaginea de fundal</li>
+      <li>background-position - pozitia imaginii de fundal</li>
+      <li>background-size - dimensiunea imaginii de fundal</li>
+      <li>
+        background-attachment - cum se comporta imaginea de fundal la scroll
+      </li>
+    </ul>
+    <h3>Formatarea textului</h3>
+    <ul>
+      <li>color - culoarea textului</li>
+      <li>font-family - fontul textului</li>
+      <li>font-size - dimensiunea fontului</li>
+      <li>font-weight - grosimea fontului</li>
+      <li>text-align - alinierea textului (left, right, center)</li>
+      <li>text-decoration - decorarea textului (underline, overline)</li>
+      <li>text-transform - transformarea textului (uppercase, lowercase)</li>
+      <li>line-height - inaltimea liniei</li>
+      <li>letter-spacing - spatiul dintre litere</li>
+      <li>word-spacing - spatiul dintre cuvinte</li>
+      <li>font-style - stilul fontului (italic, oblique)</li>
+    </ul>
+    <h3>Alte proprietati utile</h3>
+    <ul>
+      <li>margin - marginea elementului</li>
+      <li>padding - spatiul interior al elementului</li>
+      <li>border - conturul elementului</li>
+      <li>width - latimea elementului</li>
+      <li>height - inaltimea elementului</li>
+      <li>display - modul de afisare al elementului (block, inline, flex)</li>
+      <li>position - pozitionarea elementului (static, relative, absolute)</li>
+      <li>z-index - ordinea de suprapunere a elementelor</li>
+      <li>
+        overflow - cum se comporta continutul care depaseste dimensiunile
+        elementului
+      </li>
+      <li>opacity - transparenta elementului</li>
+      <li>box-shadow - umbra elementului</li>
+      <li>text-shadow - umbra textului</li>
+      <li>
+        font - permite o setare rapida a mai multor proprietati (style, weight,
+        transform, size, family)
+      </li>
+    </ul>
+    <br />
+    <a href="home.html" class="link">Back to home</a>
+  </body>
+</html>
