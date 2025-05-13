@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezumat curs 11</title>
+    <style>
+      html,
+      body {
+        background-color: #333;
+      }
+      .text {
+        color: whitesmoke;
+        font-family: Bahnschrift;
+        font-weight: 400;
+      }
+
+      .link {
+        text-decoration: none;
+        color: lightblue;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 800px;
+      }
+
+      td,
+      th {
+        border: 1px solid grey;
+        text-align: left;
+        padding: 4px;
+      }
+    </style>
+  </head>
+
+  <body class="text">
+    <h1>Cursul 11 - CSS</h1>
+    <h3>Configurarea textului</h3>
+    <table>
+      <tr>
+        <th>Proprietate</th>
+        <th>Descriere</th>
+        <th>Valori admise</th>
+      </tr>
+      <tr>
+        <td>letter-spacing</td>
+        <td>Spatiu intre litere</td>
+        <td>normal, 0, valori pozitive/negative (px, em)</td>
+      </tr>
+      <tr>
+        <td>word-spacing</td>
+        <td>Spatiu intre cuvinte</td>
+        <td>normal, valori pozitive/negative (px, em)</td>
+      </tr>
+      <tr>
+        <td>line-height</td>
+        <td>Spatiu intre linii</td>
+        <td>valori numerice, procentuale, normal</td>
+      </tr>
+      <tr>
+        <td>text-align</td>
+        <td>Aliniere orizontala</td>
+        <td>left, right, center, justify</td>
+      </tr>
+      <tr>
+        <td>vertical-align</td>
+        <td>Aliniere verticala</td>
+        <td>super, sub, baseline, top, middle, bottom, %</td>
+      </tr>
+      <tr>
+        <td>text-indent</td>
+        <td>Indentare prima linie</td>
+        <td>valori pozitive / negative (px, em, %)</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Box Model CSS</h3>
+    <table>
+      <tr>
+        <th>Proprietate</th>
+        <th>Descriere</th>
+        <th>Valori admise</th>
+      </tr>
+      <tr>
+        <td>margin (top/bottom/left/right)</td>
+        <td>Spatiu exterior element</td>
+        <td>auto, valori numerice, procentuale</td>
+      </tr>
+      <tr>
+        <td>padding (top/bottom/left/right)</td>
+        <td>spatiu interior fata de border</td>
+        <td>valori numerice, procentuale</td>
+      </tr>
+      <tr>
+        <td>border (top/bottom/left/right)</td>
+        <td>bordura completa</td>
+        <td>grosime (0, thin, medium thick, px), stil, culoare</td>
+      </tr>
+      <tr>
+        <td>width, height</td>
+        <td>dimensiuni element</td>
+        <td>valori numerice, procentuale, auto</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Stilizarea linkurilor</h3>
+    <table>
+      <tr>
+        <th>Selector</th>
+        <th>Descriere</th>
+        <th>Valori admise</th>
+      </tr>
+      <tr>
+        <td>a:link</td>
+        <td>stil link nevizitat</td>
+        <td>orice proprietate CSS aplicabila (ex. color)</td>
+      </tr>
+      <tr>
+        <td>a:visited</td>
+        <td>stil link vizitat</td>
+        <td>idem</td>
+      </tr>
+      <tr>
+        <td>a:hover</td>
+        <td>stil la trecerea mouse-ului</td>
+        <td>idem</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Liste</h3>
+    <table>
+      <tr>
+        <th>Proprietate</th>
+        <th>Descriere</th>
+        <th>Valori admise</th>
+      </tr>
+      <tr>
+        <td>list-style-type</td>
+        <td>Tip marcator</td>
+        <td>disc, circle, square, none, decimal, roman, alpha</td>
+      </tr>
+      <tr>
+        <td>list-style-image</td>
+        <td>Imagine ca marcator</td>
+        <td>url(imagine)</td>
+      </tr>
+      <tr>
+        <td>list-style-position</td>
+        <td>Pozitia marcatorului</td>
+        <td>inside, outside</td>
+      </tr>
+      <tr>
+        <td>list-style</td>
+        <td>Combina toate cele de mai sus</td>
+        <td>tip, pozitie, imagine</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Tabele</h3>
+    <table>
+      <tr>
+        <th>Proprietate</th>
+        <th>Descriere</th>
+        <th>Valori admise</th>
+      </tr>
+      <tr>
+        <td>border-collapse</td>
+        <td>contopirea contururilor</td>
+        <td>collapse, separate</td>
+      </tr>
+      <tr>
+        <td>border-spacing</td>
+        <td>distanta dintre celule</td>
+        <td>valori numerice (px, em)</td>
+      </tr>
+      <tr>
+        <td>caption-side</td>
+        <td>pozitia titlului tabelului</td>
+        <td>top, bottom</td>
+      </tr>
+      <tr>
+        <td>empty-cells</td>
+        <td>afisarea celulelor goale</td>
+        <td>show, hide</td>
+      </tr>
+      <tr>
+        <td>table-layout</td>
+        <td>sablonul tabelului</td>
+        <td>auto, fixed</td>
+      </tr>
+    </table>
+    <br />
+    <a href="home.html" class="link">Back to home</a>
+  </body>
+</html>
