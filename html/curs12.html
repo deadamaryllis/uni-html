@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezumat curs 12</title>
+    <style>
+      html,
+      body {
+        background-color: #333;
+      }
+      .text {
+        color: whitesmoke;
+        font-family: Bahnschrift;
+        font-weight: 400;
+      }
+
+      .link {
+        text-decoration: none;
+        color: lightblue;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 800px;
+      }
+
+      td,
+      th {
+        border: 1px solid grey;
+        text-align: left;
+        padding: 4px;
+      }
+    </style>
+  </head>
+
+  <body class="text">
+    <h1>Cursul 12 - CSS</h1>
+    <h3>Stilizarea imaginilor cu CSS</h3>
+    <table>
+      <tr>
+        <th>Proprietate</th>
+        <th>Descriere</th>
+        <th>Exemplu CSS</th>
+      </tr>
+      <tr>
+        <td>border-radius</td>
+        <td>Rotunjire generala a tuturor colturilor</td>
+        <td>border-radius: 15px;</td>
+      </tr>
+      <tr>
+        <td>border-left border-right border-top border-bottom</td>
+        <td>Adauga margine in jurul elementului in partea specificata</td>
+        <td>border-right: 6px solid yellow;</td>
+      </tr>
+      <tr>
+        <td>
+          border-top-left-radius border-top-right-radius
+          border-bottom-right-radius border-bottom-left-radius
+        </td>
+        <td>Rotunjire colturi specificate</td>
+        <td>border-top-left-radius: 10px;</td>
+      </tr>
+      <tr>
+        <td>border</td>
+        <td>Adauga margine in jurul elementului</td>
+        <td>border: 2px solid black;</td>
+      </tr>
+      <tr>
+        <td>opacity</td>
+        <td>Seteaza transparenta (0 - invizibil, 1 - opac complet)</td>
+        <td>opacity: 0.5;</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Pozitionarea elementelor</h3>
+    <table>
+      <tr>
+        <th>Valoare</th>
+        <th>Descriere</th>
+        <th>Exemplu CSS</th>
+      </tr>
+      <tr>
+        <td>static</td>
+        <td>Pozitionare implicita</td>
+        <td>position: static</td>
+      </tr>
+      <tr>
+        <td>relative</td>
+        <td>Pozitionare relativa</td>
+        <td>position: relative; top: 10px;</td>
+      </tr>
+      <tr>
+        <td>absolute</td>
+        <td>Pozitionare absoluta</td>
+        <td>position: absolute; left: 50px;</td>
+      </tr>
+      <tr>
+        <td>fixed</td>
+        <td>Pozitionare fixa</td>
+        <td>position: fixed; top: 0;</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Pseudo-clase CSS</h3>
+    <table>
+      <tr>
+        <th>Pseudo-clasa</th>
+        <th>Descriere</th>
+        <th>Exemplu CSS</th>
+      </tr>
+      <tr>
+        <td>:first-child</td>
+        <td>Stil aplicat primului copil</td>
+        <td>p:first-child { color: blue; }</td>
+      </tr>
+      <tr>
+        <td>:last-child</td>
+        <td>Stil aplicat ultimului copil</td>
+        <td>li:last-child { font-weight: bold; }</td>
+      </tr>
+      <tr>
+        <td>:hover</td>
+        <td>Stil la mouse peste element</td>
+        <td>a: hover { text- decoration: underline; }</td>
+      </tr>
+      <tr>
+        <td>:focus</td>
+        <td>Stil la focus pe input</td>
+        <td>input:focus { background-color: yellow }</td>
+      </tr>
+      <tr>
+        <td>:link</td>
+        <td>Link nevizitat</td>
+        <td>a:link { color: green; }</td>
+      </tr>
+      <tr>
+        <td>:visited</td>
+        <td>Link vizitat</td>
+        <td>a:visited { color: purple; }</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Pseudo-elemente CSS</h3>
+    <table>
+      <tr>
+        <th>Pseudo-element</th>
+        <th>Descriere</th>
+        <th>Exemplu CSS</th>
+      </tr>
+      <tr>
+        <td>::before</td>
+        <td>Adauga continut inainte</td>
+        <td>p::before { content: ">> "; }</td>
+      </tr>
+      <tr>
+        <td>::after</td>
+        <td>Adauga continut dupa</td>
+        <td>p::after { content: " <<"; }</td>
+      </tr>
+      <tr>
+        <td>::first-letter</td>
+        <td>Stilizeaza prima litera</td>
+        <td>p::first-letter { font-size: 200%; }</td>
+      </tr>
+      <tr>
+        <td>::first-line</td>
+        <td>Stilizeaza prima linie</td>
+        <td>p::first-line { font-weight: bold; }</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Animatii CSS</h3>
+    <table>
+      <tr>
+        <th>Proprietate</th>
+        <th>Descriere</th>
+        <th>Exemplu CSS</th>
+      </tr>
+      <tr>
+        <td>animation-name</td>
+        <td>Numele animatiei</td>
+        <td>animation-name: slide;</td>
+      </tr>
+      <tr>
+        <td>animation-duration</td>
+        <td>Durata animatiei</td>
+        <td>animation-duration: 4s;</td>
+      </tr>
+      <tr>
+        <td>animation-delay</td>
+        <td>Intarziere start</td>
+        <td>animation-delay: 2s;</td>
+      </tr>
+      <tr>
+        <td>animation-iteration-count</td>
+        <td>Numar de repetari</td>
+        <td>animation-iteration-count: infinite;</td>
+      </tr>
+      <tr>
+        <td>animation-direction</td>
+        <td>Sensul animatiei</td>
+        <td>animation-direction: alternate;</td>
+      </tr>
+      <tr>
+        <td>animation-fill-mode</td>
+        <td>Stiluri dupa final</td>
+        <td>animation-fill-mode: forwards;</td>
+      </tr>
+      <tr>
+        <td>animation-play-state</td>
+        <td>Pauza/rulare</td>
+        <td>animation-play-state: running;</td>
+      </tr>
+      <tr>
+        <td>animation-timing-function</td>
+        <td>Curba de viteza</td>
+        <td>animation-timing-function: ease-in-out;</td>
+      </tr>
+    </table>
+    <br />
+    <h3>Tranzitii CSS</h3>
+    <table>
+      <tr>
+        <th>Proprietate</th>
+        <th>Descriere</th>
+        <th>Exemplu CSS</th>
+      </tr>
+      <tr>
+        <td>transition-property</td>
+        <td>Ce proprietate se anima</td>
+        <td>transition-property: background-color;</td>
+      </tr>
+      <tr>
+        <td>transition-duration</td>
+        <td>Durata efectului</td>
+        <td>transition-duration: 1s;</td>
+      </tr>
+      <tr>
+        <td>transition-timing-function</td>
+        <td>Tipul de viteza</td>
+        <td>transition-timing-function: ease-in;</td>
+      </tr>
+      <tr>
+        <td>transition-delay</td>
+        <td>Intarziere pornire</td>
+        <td>transition-delay: 0.5s;</td>
+      </tr>
+    </table>
+    <br />
+    <a href="home.html" class="link">Back to home</a>
+  </body>
+</html>
