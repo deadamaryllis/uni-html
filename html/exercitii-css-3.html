@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facultatea de Stiinte ale Guvernarii si Comunicarii</title>
+    <style>
+      html,
+      body {
+        margin: 0 auto;
+      }
+      .header {
+        background-color: #303d4e;
+        color: white;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 130px;
+        z-index: 1;
+      }
+      .content {
+        margin-top: 150px;
+        padding-left: 20%;
+        padding-right: 20%;
+        opacity: 0;
+        animation: aparitie 2s ease-in forwards;
+        transform: translateY(20px);
+      }
+      @keyframes aparitie {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .text1 {
+        ::first-letter {
+          font-size: 2em;
+          color: rgb(47, 115, 138);
+        }
+        ::first-line {
+          font-weight: bold;
+        }
+      }
+      .uvt-image {
+        float: right;
+        margin: 5px;
+        border: 4px solid #2f738a;
+        border-radius: 30px 0px 30px 0px;
+      }
+      .uvt-image:hover {
+        transform: rotate(5deg) scale(1.05);
+        opacity: 0.95;
+      }
+      .link1 {
+        color: lightblue;
+        text-decoration: none;
+      }
+      .link1:visited {
+        color: hotpink;
+      }
+      .link1:hover {
+        text-decoration: underline;
+      }
+      .buton {
+        background-color: #5296d5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 2px;
+        transition: transform 0.3s ease;
+      }
+      .buton:hover {
+        background-color: #3f7fbf;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      .input1:focus {
+        background-color: #6b7f92;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Facultatea de Stiinte ale Guvernarii si Comunicarii</h1>
+      <h6>Universitatea de Vest din Timișoara</h6>
+    </div>
+    <div class="content">
+      <img
+        src="https://uvt.ro/wp-content/uploads/elementor/thumbs/Toata-Cladirea-UVT-2-1-q2ckqcnz80puhpj4yoig8uduytvuxzmgi181nsw6ns.jpg"
+        alt="UVT Logo"
+        width="200"
+        class="uvt-image"
+      />
+      <div class="text1">
+        <p>
+          Programul Media digitală are ca obiectiv formarea de specialiști în
+          acest domeniu interdisciplinar și actual al societății de astăzi,
+          bazată din multe puncte de vedere pe tehnologie. Prin discipline
+          aflate la intersecția științelor comunicării și a tehnologiilor
+          digitale, acest program urmărește să asigure competențele și
+          abilitățile necesare performanței profesionale, cât și bazele
+          teoretice de specialitate sau valorificarea acestora în mod practic.
+          Cel mai nou program de licență al departamentului de Științe ale
+          Comunicării oferă oportunitatea de a studia bazele teoretice ale
+          domeniului, în cadrul cursurilor, și apoi de a le aplica prin
+          activități de seminar sau prin proiecte extracurriculare. Prin stagii
+          de practică, internshipuri, școli de vară, ateliere de lucru,
+          organizarea de evenimente, realizarea proiectelor în echipe
+          multidisciplinare și vizite de documentare, studenții se bucură de
+          șansa de a simți pulsul pieței muncii și de a fi cu un pas mai aproape
+          de angajare.
+        </p>
+      </div>
+      <p class="linkuri">
+        Accesează
+        <a class="link1" href="https://fsgc.uvt.ro/">exemplul de link</a> pentru
+        mai multe informații
+      </p>
+      <form>
+        <label for="nume">Introdu numele:</label><br />
+        <input
+          type="text"
+          class="input1"
+          placeholder="Nume"
+          required
+        /><br /><br />
+        <input type="button" class="buton" value="Trimite" />
+      </form>
+    </div>
+  </body>
+</html>

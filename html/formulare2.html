@@ -6,7 +6,7 @@
     <title>Formulare 2</title>
   </head>
 
-  <body bgcolor="#e6e6f8" align="center">
+  <body bgcolor="#e6e6f8" style="text-align: center">
     <h1>Formulare Complexe</h1>
     <h2>Formular 1: Înregistrare utilizator</h2>
     <form method="post">
@@ -96,6 +96,46 @@
           </td>
         </tr>
       </table>
+      <p>Modalitate de plată:</p>
+      <input type="checkbox" id="card" name="card" />
+      <label for="card">Card</label>
+      <input type="checkbox" id="cash" name="cash" />
+      <label for="cash">Cash la livrare</label>
+      <br />
+      <br />
+      <input type="button" id="plaseaza_comanda" value="Plasează comanda" />
     </form>
+    <hr />
+    <h2>Formular 3: Programare la doctor</h2>
+    Nume pacient:
+    <input
+      type="text"
+      name="nume_pacient"
+      size="50"
+      maxlength="50"
+      required
+    /><br /><br />
+    Telefon:
+    <input
+      type="text"
+      name="telefon_pacient"
+      size="40"
+      maxlength="40"
+      required
+    /><br /><br />
+    Specialitate dorită:
+    <input
+      type="text"
+      name="nume_pacient"
+      size="50"
+      maxlength="50"
+      required
+    /><br /><br />
+    Data și ora programării:
+    <input type="date" name="data_programarii" required /><br /><br />
+    <label for="comentarii">Observații suplimentare:</label><br />
+    <textarea id="comentarii" name="comentarii" rows="4" cols="50"></textarea
+    ><br /><br />
+    <input type="button" id="programeaza" value="Programează" />
   </body>
 </html>

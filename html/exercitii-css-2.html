@@ -9,13 +9,97 @@
       body {
         font-family: Helvetica, Arial, sans-serif;
       }
+      .horizontal-list {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        color: blue;
+      }
+      .horizontal-list li {
+        list-style-type: disc;
+        display: list-item;
+        margin-left: 1em;
+      }
+      table {
+        border: 5px dotted red;
+        border-collapse: collapse;
+        width: 80%;
+        height: 300px;
+        text-align: center;
+      }
+      th {
+        border: 3px dotted blue;
+        background-color: #800080;
+        color: white;
+        text-transform: uppercase;
+      }
+      td {
+        border: 3px dotted blue;
+      }
+      .card {
+        border: 2px dotted grey;
+        width: 150px;
+      }
+      .card a:hover {
+        color: blueviolet;
+      }
+      .text-html-css {
+        letter-spacing: 1.5px;
+        word-spacing: 8px;
+        line-height: 1.7;
+        text-align: justify;
+        text-indent: 40px;
+      }
     </style>
   </head>
   <body>
     <h3>Lista de Cursuri</h3>
-    <ul>
-      <li><a href="curs1.html">HTML</a></li>
-      <li><a href="curs10.html">CSS</a></li>
+    <ul class="horizontal-list">
+      <li>HTML</li>
+      <li>CSS</li>
     </ul>
+    <h3>Tabel Cursuri</h3>
+    <table align="center">
+      <tr>
+        <th>curs</th>
+        <th>descriere</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Structura unei pagini web</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Stilizarea elementelor web</td>
+      </tr>
+      <tr>
+        <td colspan="2">Cea mai usoara materie!</td>
+      </tr>
+    </table>
+    <h3>Carduri Cursuri</h3>
+    <div class="card">
+      <h4>HTML</h4>
+      <p>Bază pentru orice site.</p>
+      <a href="https://www.w3schools.com/html/">Detalii curs</a>
+    </div>
+    <div class="card">
+      <h4>CSS</h4>
+      <p>Aspect vizual și design.</p>
+      <a href="https://www.w3schools.com/css/">Detalii curs</a>
+    </div>
+    <p class="text-html-css">
+      HTML (HyperText Markup Language) este limbajul de bază folosit pentru a
+      structura conținutul unei pagini web. Stilizarea acestui conținut este
+      realizată prin CSS (Cascading Style Sheets), care permite aplicarea de
+      culori, fonturi și aranjamente vizuale. De exemplu, cu ajutorul
+      proprietății text-align putem alinia textul la stânga, dreapta sau centra.
+      În acest text, avem aliniere justify pentru o prezentare uniformă. Spațiul
+      dintre litere (letter-spacing) și dintre cuvinte (word-spacing) a fost
+      mărit pentru o mai bună lizibilitate. Rândurile sunt aerisite prin
+      line-height, iar prima linie a fost indentată cu text-indent. Simbolurile
+      precum H₂O (pentru apa) sau formule de tipul a² + b² = c² demonstrează
+      folosirea atributiei vertical-align pentru subscript și superscript.
+    </p>
   </body>
 </html>
